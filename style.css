@@ -1,0 +1,30 @@
+/* styles.css */
+
+/* Custom styles for the registration form */
+body {
+    background-color: peachpuff;
+    color: #fff;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.card-header {
+    text-align: center;
+}
+
+.btn-orange {
+    background-color: #FFA500;
+    color: #fff;
+    border: none;
+}
+
+.btn-orange:hover {
+    background-color: #FF8C00;
+}
+
+/* Set label color to black */
+label {
+    color: #000;
+}
