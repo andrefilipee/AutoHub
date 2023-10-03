@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (storedUser.password === password) {
                     // Store the email in sessionStorage upon successful login
                     sessionStorage.setItem('currentUser', email);
-                    alert('Login successful!');
                     // Redirect to a different page (e.g., dashboard) after successful login
                     window.location.href = "mainPage.html";
                 } else {
