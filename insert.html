@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Car Part</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="bg-warning text-white text-center py-3">
+        <h1>Insert Car Part</h1>
+    </header>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form id="addPartForm">
+                    <div class="form-group">
+                        <label for="partName">Part Name:</label>
+                        <input type="text" id="partName" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="partCategory">Category:</label>
+                        <select id="partCategory" class="form-control" required>
+                            <option value="engine">Engine</option>
+                            <option value="brakes">Brakes</option>
+                            <option value="tires">Tires</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="partPrice">Price:</label>
+                        <input type="text" id="partPrice" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Add Part</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
