@@ -1,4 +1,36 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+
+    const loginForm = document.getElementById('loginForm');
+    if (loginForm) {
+        loginForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+
+            // Retrieve user information from Local Storage
+            const storedUserJSON = localStorage.getItem(email);
+
+            if (storedUserJSON) {
+                const storedUser = JSON.parse(storedUserJSON);
+
+                if (storedUser.password === password) {
+                    // Store the email in sessionStorage upon successful login
+                    sessionStorage.setItem('currentUser', email);
+                    alert('Login successful!');
+                    // Redirect to a different page (e.g., dashboard) after successful login
+                    window.location.href = "mainPage.html";
+                } else {
+                    alert('Invalid email or password.');
+                }
+            } else {
+                alert('User not found. Please register first or try again.');
+            }
+        });
+    }
+
+
+
     // Registration form event listener
     const registrationForm = document.getElementById('registrationForm');
     if (registrationForm) {
@@ -26,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Login form event listener
-    const loginForm = document.getElementById('loginForm');
     if (loginForm) {
         loginForm.addEventListener('submit', function (event) {
             event.preventDefault();
@@ -62,6 +93,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     }
+
+
+    
 });
 
 
