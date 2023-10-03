@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    }
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    z-index: 2; /* Set a higher z-index to keep the navbar on top */
+    color: white;
+}
+
+.navbar-brand {
+    padding: 0; /* Remove padding for the logo */
+    color: white;
+}
+
+.navbar-brand img {
+    max-height: 100px; /* Adjust the logo height */
+}
+
+.navbar-nav .nav-link {
+    color: white; /* Text color for the menu items */
+    font-size: 20px; /* Adjust the menu font size */
+    
+}
+
+.Section_top {
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(image/img2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: change 13s infinite ease-in-out;
+}
+
+.content {
+    padding: 5% 10%;
+}
+
+.content h1 {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+@keyframes change {
+    0% {
+        background-image: url(image/img2.jpeg);
+    }
+
+    75% {
+        background-image: url(image/img5.jpeg);
+    }
+
+    100% {
+        background-image: url(image/img6.webp);
+    }
+}
+
+#product1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature {
+    padding: 3% 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.products {
+    padding: 2%;
+}
+
+#product1 .pro {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    padding: 20px 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #cce7d0;
+    border-radius: 20px;
+    margin: 15px 0px;
+    text-transform: uppercase;
+}
+
+#product1 .pro:hover {
+    box-shadow: 5px 5px 10px rgba(70, 62, 221, 0.1);
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="image/logo.png" alt="Logo" class="img-fluid"></a>
+<!-- Mobile Menu Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Catagories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="Section_top">
+        <div class="content">
+            <h1>Turbocharge Your Savings: Exclusive Discounts on Premium Car Parts Await You!</h1>
+            <a href="shop.html" class="btn btn-primary custom-button">Shop Now</a>
+        </div>
+    </div>
+    <!-- Start of the main page -->
+    <div class="feature">
+        <h2><b>Feature Product</b></h2>
+    </div>
+
+    <section id="product1" class="products">
+        <!-- Your product items here -->
+        <div class="pro">
+            <img src="image/penus.png" alt="tire">
+            <h6>Tire</h6>
+        </div>
+        <div class="pro">
+            <img src="image/travagem.png" alt="Brakes">
+            <h6>Brakes</h6>
+        </div>
+        <div class="pro">
+            <img src="image/motor.png" alt="Motor">
+            <h6>Motor</h6>
+        </div>
+        <div class="pro">
+            <img src="image/filtro.png" alt="Filter">
+            <h6>Filter</h6>
+        </div>
+        <div class="pro">
+            <img src="image/eletrico.png" alt="Electric System">
+            <h6>Electric System</h6>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
