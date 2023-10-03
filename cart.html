@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Your Logo" class="img-fluid">
+            </a>
+            <!-- Mobile Menu Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Registo/Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Carrinho</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row mb-5">
+            <div class="col">
+                <br>
+              <h1 class="display-4">Carrinho de compras</h1>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col">
+          <table class="table" >
+            <thead>
+              <tr>
+                <th>Tipo</th>
+                <th>Referência</th>
+                <th>Descrição</th>
+                <th>Valor</th>
+                <th>Quantidade</th>
+                <th></th>
+              </tr>
+            </thead>
+
+            <tbody id="listaDespesas">
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+     </div> 
+
+  
+    <!-- Start of the main page -->
+    
+    <div class="feature">
+        <h2>Feature Product</h2>
+    </div>
+
+    <section id="product1" class="products">
+        <!-- Your product items here -->
+        <div class="pro">
+            <img src="penus.png" alt="tire">
+            <h6>Tire</h6>
+        </div>
+        <div class="pro">
+            <img src="travagem.png" alt="Brakes">
+            <h6>Brakes</h6>
+        </div>
+        <div class="pro">
+            <img src="motor.png" alt="Motor">
+            <h6>Motor</h6>
+        </div>
+        <div class="pro">
+            <img src="filtro.png" alt="Filter">
+            <h6>Filter</h6>
+        </div>
+        <div class="pro">
+            <img src="eletrico.png" alt="Electric System">
+            <h6>Electric System</h6>
+        </div>
+    </section>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
