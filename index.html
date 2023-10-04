@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <title>Home</title>
 
     <style>
@@ -126,6 +127,41 @@
     box-shadow: 5px 5px 10px rgba(70, 62, 221, 0.1);
 }
 
+footer{
+    background-color: #2a2a2a;
+  }
+  .footerCont{
+    width: 100%;
+    padding: 70px 30px 20px;
+
+  }
+  .social{
+    display: flex;
+    justify-content: center;
+  }
+  .social a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+  }
+
+  .social a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+  }
+  .social a:hover{
+    background-color: orange;
+    transition: 0.5s;
+  }
+
+  .footerBottom{
+    color: #fff;
+    text-align: center;
+  }
+
     </style>
 </head>
 
@@ -192,6 +228,22 @@
             <h6>Electric System</h6>
         </div>
     </section>
+
+    <footer>
+        <div class="footerCont">
+            <div class="social">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy; 2023 by AutoHub</p>
+            </div>
+        </div>
+    
+    </footer>
+    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
