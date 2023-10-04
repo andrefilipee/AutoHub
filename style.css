@@ -1,27 +1,36 @@
-/* styles.css */
-
-/* Custom styles for the registration form */
-body {
-    background-color: peachpuff;
-    color: #fff;
+ /* Custom styles for the registration form */
+ body {
+    background-image: url(background.jpeg); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    color: #333;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .card {
-    margin-top: 20px;
+    border: none;
+    font-weight: bold;
 }
 
 .card-header {
+    background-color: #333;
+    color: #fff;
     text-align: center;
+    padding: 10px;
 }
 
+
+
 .btn-orange {
-    background-color: #FFA500;
+    background-color: black;
     color: #fff;
     border: none;
 }
 
 .btn-orange:hover {
-    background-color: #FF8C00;
+    background-color: #d9534f;
 }
 
 /* Set label color to black */
