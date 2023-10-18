@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <style>
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.7);
+            /* Semi-transparent white background */
+            z-index: 2;
+            /* Set a higher z-index to keep the navbar on top */
+            color: white;
+        }
+
+        .navbar-brand {
+            padding: 0;
+            /* Remove padding for the logo */
+            color: white;
+        }
+
+        .navbar-brand img {
+            max-height: 100px;
+            /* Adjust the logo height */
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            /* Text color for the menu items */
+            font-size: 20px;
+            /* Adjust the menu font size */
+
+        }
+
+        .page-heading {
+            background-image: url(image/motors/banner.jpeg);
+            height: 65vh;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .page-heading .inner-content {
+            padding: 150px 0px;
+            text-align: center;
+        }
+
+        .page-heading .inner-content h2 {
+            font-size: 52px;
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        #products .section-heading {
+            text-align: center;
+            margin-bottom: 60px;
+            margin-top: 80px;
+        }
+
+        #products .item {
+            margin-bottom: 30px;
+        }
+
+        #products .item .thumb img {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        #products .item .down-content {
+            padding-top: 20px;
+            position: relative;
+            z-index: 3;
+            background-color: #fff;
+        }
+
+        #products .item .down-content h4 {
+            font-size: 22px;
+            color: #2a2a2a;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        #products .item .down-content span {
+            font-size: 18px;
+            color: #a1a1a1;
+            font-weight: 500;
+            display: block;
+        }
+
+        #products .item .down-content ul.stars {
+            position: absolute;
+            right: 0;
+            top: 20px;
+        }
+
+        #products .item .down-content ul.stars li {
+            display: inline;
+            font-size: 13px;
+            color: rgba(243, 181, 25);
+        }
+
+        #products .item .thumb .hover-content {
+            position: absolute;
+            z-index: 2;
+            text-align: center;
+            bottom: -60px;
+            width: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .5s;
+        }
+
+        #products .item .thumb:hover .hover-content {
+            bottom: 30px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #products .item .thumb {
+            position: relative;
+        }
+
+        #products .item .thumb .hover-content ul li {
+            display: inline;
+            margin: 0px 10px;
+        }
+
+        #products .item .thumb .hover-content ul li a {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            display: inline-block;
+            color: #2a2a2a;
+            background-color: #fff;
+        }
+
+        footer {
+            background-color: #2a2a2a;
+        }
+
+        .footerCont {
+            width: 100%;
+            padding: 70px 30px 20px;
+
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+        }
+
+        .social a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+
+        .social a i {
+            font-size: 2em;
+            color: black;
+            opacity: 0.9;
+        }
+
+        .social a:hover {
+            background-color: orange;
+            transition: 0.5s;
+        }
+
+        .footerBottom {
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="image/logo.png" alt="Logo" class="img-fluid">
+            </a>
+            <!-- Mobile Menu Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="page-heading" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section" id="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Our Latest Products</h2>
+                        <span>Check out all of our products.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="components">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <footer>
+        <div class="footerCont">
+            <div class="social">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy; 2023 by AutoHub</p>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

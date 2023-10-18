@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Your Logo" class="img-fluid">
+            </a>
+            <!-- Mobile Menu Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Registo/Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Carrinho</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactos.html">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row mb-5">
+            <div class="col">
+                <br>
+                <h1 class="display-4">Carrinho de compras</h1>
+            </div>
+        </div>
+
+        <div class="text-bg-secondary p-3">
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Tipo</th>
+                                <th>Referência</th>
+                                <th>Descrição</th>
+                                <th>Valor</th>
+                                <th>Quantidade</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="listaDespesas">
+                            <tr>
+                                <th>
+                                    Kit Travagem Porsche 911.2 GT3
+                                </th>
+                                <th>
+                                    6575647889374
+                                </th>
+                                <th>
+                                    Travagem Porsche 911.2 GT3
+                                </th>
+                                <th>
+                                    1200€
+                                </th>
+                                <th>
+                                    1
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+
+                                <div class="text-bg-secondary p-3">
+                                    <th>Total: 1200€</th>
+                                </div>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="listaDespesas">
+                        </tbody>
+                    </table>
+                    <button class="btn btn-danger" name="alertChamar">Comprar</button>
+
+
+
+
+                    <div class="row align-items-start">
+                        <div class="col">
+
+                        </div>
+                        <div class="col">
+
+                        </div>
+                        <div class="col">
+
+                        </div>
+                        <div class="col">
+
+                        </div>
+                        <div class="col">
+
+                        </div>
+                        <div class="col">
+
+                        </div>
+                        <div class="col">
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const alertChamar = document.querySelector('[name="alertChamar"]');
+        alertChamar.addEventListener('click', function () {
+            alert('Compra efetuada com sucesso!');
+        });
+
+    </script>
+</body>
+
+</html>

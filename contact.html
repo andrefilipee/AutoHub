@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('image/img2.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            z-index: 12; /* Set a higher z-index to keep the navbar on top */
+            color: white;
+        }
+
+        .navbar-brand {
+            padding: 0; /* Remove padding for the logo */
+            color: white;
+        }
+
+        .navbar-brand img {
+            max-height: 100px; /* Adjust the logo height */
+        }
+
+        .navbar-nav .nav-link {
+            color: white; /* Text color for the menu items */
+            font-size: 20px; /* Adjust the menu font size */
+        }
+
+        .containers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .contact-box-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%; /* Adjust width to fit the screen */
+            max-width: 1000px; /* Set a maximum width for larger screens */
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-box {
+            padding: 20px;
+            text-align: center;
+            margin-top: 100px; /* Reduced margin for mobile devices */
+            font-weight: bold;
+        }
+
+        #map-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align to the top of the container */
+            align-items: flex-start; /* Align to the left of the container */
+        }
+
+        #map {
+            width: 100%; /* Set map width to 100% of the container */
+            height: 500px; /* Set a fixed height for the map (adjust as needed) */
+        }
+
+        footer{
+            background-color: #2a2a2a;
+        }
+        .footerCont{
+            width: 100%;
+            padding: 70px 30px 20px;
+
+        }
+        .social{
+            display: flex;
+            justify-content: center;
+        }
+        .social a{
+            text-decoration: none;
+            padding: 10px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+
+        .social a i{
+            font-size: 2em;
+            color: black;
+            opacity: 0.9;
+        }
+        .social a:hover{
+            background-color: orange;
+            transition: 0.5s;
+        }
+
+        .footerBottom{
+            color: #fff;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+     <!-- Fixed Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="image/logo.png" alt="Logo" class="img-fluid"></a>
+            <!-- Mobile Menu Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="containers">
+        <div class="contact-box-container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="contact-box">
+                        <h2>Find Us At</h2>
+                        <p>Alameda das Linhas de Torres 179, 1750-142 Lisboa</p> <!-- Replace with your location -->
+                        <p>Phone: +351 218436670</p> <!-- Replace with your phone number -->
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div id="map-container">
+                        <div id="map">
+                            <!-- Embed Google Map here using the Google Maps API or an iframe -->
+                            <!-- Example using iframe (replace with your own map URL): -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3110.792265579732!2d-9.162586023785574!3d38.76846837175176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1932edd62bb521%3A0x1ee0de4e32108704!2sISTEC%20-%20Institute%20of%20Advanced%20Technologies!5e0!3m2!1sen!2spt!4v1696341546914!5m2!1sen!2spt" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerCont">
+            <div class="social">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy; 2023 by AutoHub</p>
+            </div>
+        </div>
+    
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
